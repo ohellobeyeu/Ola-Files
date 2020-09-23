@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Ola City is an advertising platform based on Performance Marketing, where businesses can promote their products and services to millions of customers at the lowest cost, bringing the highest efficiency. It is also a platform that helps millions of participants earn extra income by taking advantage of their free time.">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="Ola City"/>
+		<meta property="og:image" content="/vendor/img/media/fb_1200x627.jpg?v=1.0.10">
+		<!-- Title -->
+		<title>Ola City - Advertising Platform base on Performance Marketing</title>
+    	<link rel="shortcut icon" type="image/png" href="/vendor/img/brand/Favicon_1.png?v=1.0.10"/>
+
+		<!-- Icons css -->
+		<link href="/vendor/css/icons.css" rel="stylesheet">
+
+		<!--  Custom Scroll bar-->
+		<link href="/vendor/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+
+		<!--  Sidebar css -->
+		<link href="/vendor/plugins/sidebar/sidebar.css" rel="stylesheet">
+
+		<!--- Internal Morris css-->
+		<link href="/vendor/plugins/morris.js/morris.css" rel="stylesheet">
+
+		<!--- Style css --->
+		<link href="/vendor/css/style.css?v=1.0.10" rel="stylesheet">
+
+		<!--- Dark-mode css --->
+		<link href="/vendor/css/style-dark.css" rel="stylesheet">
+
+		<!---Skinmodes css-->
+		<link href="/vendor/css/skin-modes.css" rel="stylesheet" />
+
+		<!--Internal   Notify -->
+		<link href="/vendor/plugins/notify/css/notifIt.css" rel="stylesheet"/>
+        <link href="/vendor/plugins/slick-master/slick/slick.css" rel="stylesheet"/>
+
+        <!--- Custom css --->
+        <link href="/vendor/css/custom.css?v=1.0.10" rel="stylesheet">
+
+		<style type="text/css">
+			.eyeball {
+			  fill: red !important
+			}
+			.desktop-logo{
+				height: 3.2rem;
+			}
+            #twitterIcon{
+                position: fixed;
+                left: 20px;
+                bottom: 20px;
+                background: url(/vendor/img/telegram.png) no-repeat;
+                width: 40px;
+                height: 40px;
+                background-size: cover;
+                border-radius: 50%;
+            }
+
+            #facebookIcon{
+                position: fixed;
+                left: 20px;
+                bottom: 70px;
+                background: url(/vendor/img/facebook.png) no-repeat;
+                width: 40px;
+                height: 40px;
+                background-size: cover;
+                background-color: white;
+                border-radius: 50%;
+            }
+			@media (max-width: 991.98px) {
+			  .profileHeader{
+			  	display: none !important;
+			  }
+
+			  #dasboardMobile{
+			  	display: inline !important;
+			  }
+
+			}
+			@media (max-width: 720px) {
+				#mobileShow{
+				  	display: inline !important;
+				}
+				.main-header-center{
+					display: none;
+				}
+                .navbar-lang{
+                    display: block !important;
+                }
+			}
+			.content-title{
+				padding-top:10px;
+			}
+			.text-muted{
+				padding-top:10px;
+			}
+
+			@media (max-width: 480px) {
+			  .main-header-right .nav .nav-item .dropdown-menu {
+			  	top: 94px !important
+			  }
+			  #suspectMobile{
+			  	margin-top:5px !important		;
+			  }
+			}
+			.dropdown-menu-left .dropdown-item {
+			    padding: 0px 26px !important;
+			    padding-left: 10px !important;
+			}
+		</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171447448-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-171447448-1');
+		</script>
+		    <link rel="stylesheet" href="https://olacity.com/css/short_link/css/app.css?ver=">
+	</head>
+
+	<body class="main-body">
+
+		<!-- Loader -->
+		<div id="global-loader">
+			<img src="/vendor/img/loader.svg" class="loader-img" alt="Loader">
+		</div>
+		<!-- /Loader -->
+
+		<!-- Page -->
+		<div class="page">
+
+			<!-- main-header opened -->
+			<style>
+    .currency .dropdown-menu {
+        width: max-content;
+        min-width: auto;
+    }
+</style>
+<div class="main-header nav nav-item hor-header">
+	<div class="container">
+		<div class="main-header-left ">
+			<a class="animated-arrow hor-toggle horizontal-navtoggle"><span></span></a><!-- sidebar-toggle-->
+			<a class="header-brand" href="/dashboard">
+				<img src="/vendor/img/brand/logo-white.png" class="desktop-dark">
+				<img src="/vendor/img/brand/logo_Ola_Network_01.png?v=1.0.10" class="desktop-logo">
+				<img src="/vendor/img/brand/logo_Ola_Network_01.png?v=1.0.10" class="desktop-logo-1">
+				<img src="/vendor/img/brand/favicon-white.png" class="desktop-logo-dark">
+			</a>
+			<div class="main-header-center  ml-4">
+				<span id="myInput">https://olacity.com/ref/996101202 </span><span style="cursor: pointer;" onclick="copyToClipboard('#myInput')" class="tag tag-indigo ml-1">Copy</span>
+			</div>
+
+		</div><!-- search -->
+
+		<div class="main-header-right">
+            <ul class="nav">
+                <li class="currency">
+                    <div class="dropdown  nav-itemd-none d-md-flex notranslate">
+                        <a href="#" class="d-flex  nav-item nav-link pr-0 country-flag1" data-toggle="dropdown" aria-expanded="false">
+                            <span style="color: black; padding: 8px">VND</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow" x-placement="bottom-end" style="max-width: auto !important;">
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=USD" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">USD</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=EUR" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">EUR</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=JPY" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">JPY</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=GBP" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">GBP</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=GNF" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">GNF</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=AUD" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">AUD</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=CAD" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">CAD</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=DKK" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">DKK</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=HKD" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">HKD</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=NOK" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">NOK</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=VND" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">VND</strong>
+                                    </div>
+                                </a>
+                                                    </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav nav-item navbar-lang navbar-nav-right ml-auto notranslate" style="display: none">
+                <div class="dropdown nav-item main-header-notification">
+                    <a href="javascript:void(0)" style="padding: 0px"><span style="color: black; font-size: 16px">VND</span></a>
+                    <div class="dropdown-menu" style="width: max-content; min-width: auto">
+                        <div class="main-notification-list Notification-scroll" style="overflow: scroll; width: 100px">
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=USD" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">USD</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=EUR" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">EUR</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=JPY" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">JPY</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=GBP" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">GBP</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=GNF" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">GNF</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=AUD" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">AUD</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=CAD" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">CAD</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=DKK" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">DKK</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=HKD" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">HKD</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=NOK" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">NOK</strong>
+                                    </div>
+                                </a>
+                                                            <a href="https://olacity.com/dashboard/view-ads?currency=VND" class="dropdown-item d-flex ">
+                                    <div class="d-flex">
+                                        <strong class="mr-2 ml-2 my-auto">VND</strong>
+                                    </div>
+                                </a>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="nav nav-item  navbar-nav-right ml-auto">
+				<div class="dropdown nav-item main-header-notification">
+					<a class="new nav-link" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span class=" pulse"></span></a>
+					<div class="dropdown-menu">
+						<div class="menu-header-content bg-primary text-left">
+							<div class="d-flex">
+								<h6 class="dropdown-title mb-1 tx-15 text-white font-weight-semibold">Thông báo</h6>
+								<span class="badge badge-pill badge-warning ml-auto my-auto float-right">Đánh dấu tất cả đã đọc</span>
+							</div>
+							<p class="dropdown-title-text subtext mb-0 text-white op-6 pb-0 tx-12 "></p>
+						</div>
+						
+						<div class="dropdown-footer">
+							<a href="#">Xem tất cả</a>
+						</div>
+					</div>
+				</div>
+				<div class="nav-item full-screen fullscreen-button">
+					<a class="new nav-link full-screen-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg></a>
+				</div>
+				<div class="dropdown main-profile-menu nav nav-item nav-link" style="z-index: 999999">
+					<a class="profile-user d-flex" href=""><img alt="" src="/vendor/img/photos/user.png"></a>
+					<div class="dropdown-menu">
+						<div class="main-header-profile bg-primary p-3">
+							<div class="d-flex wd-100p">
+								<div class="main-img-user"><img alt="" src="/vendor/img/photos/user1.png" class=""></div>
+								<div class="ml-3 my-auto">
+									<h6>Phạm Quốc Cường</h6>
+									<span>
+																				<img src="/vendor/img/kyc_verify_fail.png" width="90px" />
+																			</span>
+								</div>
+							</div>
+						</div>
+						<a class="dropdown-item" href="/dashboard/profile"><i class="bx bx-user-circle"></i>Profile</a>
+						<a class="dropdown-item l-log-out" href="/logout"><i class="bx bx-log-out"></i> Log out </a>
+					</div>
+				</div>
+				<div class="nav-item profileHeader" style="display: flex;">
+					<p style="margin-bottom: auto; margin-top: auto; padding: 3px; font-weight: bolder;">Phạm Quốc Cường </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="main-header nav nav-item hor-header" id="mobileShow" style="display:none;top:55px;height:37px;">
+	<div class="container">
+		<div class="sub-header" style="margin: auto;">
+			<span id="myInput">https://olacity.com/ref/996101202 </span><span style="cursor: pointer;" onclick="copyToClipboard('#myInput')" class="tag tag-indigo ml-1">Copy</span>
+			        <br/>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+			<!-- /main-header -->
+
+			<!--Horizontal-main -->
+			<div class="sticky">
+	<div class="horizontal-main hor-menu clearfix side-header">
+
+		<div class="horizontal-mainwrapper container clearfix">
+			<!--Nav-->
+
+			<nav class="horizontalMenu clearfix">
+				<ul class="horizontalMenu-list">
+					<li aria-haspopup="true"><a href="/dashboard" class=""><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24" ><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 5h4v6H5zm10 8h4v6h-4zM5 17h4v2H5zM15 5h4v2h-4z" opacity=".3"/><path d="M3 13h8V3H3v10zm2-8h4v6H5V5zm8 16h8V11h-8v10zm2-8h4v6h-4v-6zM13 3v6h8V3h-8zm6 4h-4V5h4v2zM3 21h8v-6H3v6zm2-4h4v2H5v-2z"/></svg>Dashboard</a>
+					</li>
+                    <li aria-haspopup="true"><a href="/dashboard/make-money" class="sub-icon"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 30 30"><path d="M 16 3 C 10.486 3 6 7.486 6 13 C 6 18.514 10.486 23 16 23 C 21.514 23 26 18.514 26 13 C 26 7.486 21.514 3 16 3 z M 16 5 C 20.411 5 24 8.589 24 13 C 24 17.411 20.411 21 16 21 C 11.589 21 8 17.411 8 13 C 8 8.589 11.589 5 16 5 z M 15 7 L 15 8.1894531 C 14.855 8.2419531 14.714063 8.3061133 14.580078 8.3789062 C 14.446094 8.4516992 14.318203 8.5338281 14.197266 8.625 C 14.076328 8.7161719 13.963281 8.8161914 13.857422 8.9238281 C 13.645703 9.1391016 13.465391 9.3846484 13.326172 9.6542969 C 13.256562 9.7891211 13.196875 9.930625 13.148438 10.076172 C 13.051562 10.367266 13 10.6775 13 11 C 13 11.205 13.022109 11.405469 13.0625 11.599609 C 13.143281 11.987891 13.300547 12.350391 13.517578 12.669922 C 13.626094 12.829688 13.748516 12.978984 13.884766 13.115234 C 14.157266 13.387734 14.481719 13.608594 14.839844 13.761719 C 15.197969 13.914844 15.59 14 16 14 C 16.1425 14 16.276016 14.026953 16.396484 14.076172 C 16.516953 14.125391 16.623516 14.197734 16.712891 14.287109 C 16.802266 14.376484 16.874609 14.483047 16.923828 14.603516 C 16.973047 14.723984 17 14.8575 17 15 C 17 15.4275 16.757891 15.776172 16.396484 15.923828 C 16.276016 15.973047 16.1425 16 16 16 C 15.8575 16 15.723984 15.973047 15.603516 15.923828 C 15.483047 15.874609 15.376484 15.802266 15.287109 15.712891 C 15.108359 15.534141 15 15.285 15 15 L 13 15 C 13 15.16125 13.013828 15.320254 13.039062 15.474609 C 13.064297 15.628965 13.1 15.778281 13.148438 15.923828 C 13.196875 16.069375 13.256562 16.210879 13.326172 16.345703 C 13.395781 16.480527 13.475703 16.608281 13.564453 16.730469 C 13.653203 16.852656 13.751563 16.968535 13.857422 17.076172 C 13.963281 17.183809 14.076328 17.283828 14.197266 17.375 C 14.318203 17.466172 14.446094 17.548301 14.580078 17.621094 C 14.714062 17.693887 14.855 17.758047 15 17.810547 L 15 19 L 17 19 L 17 17.810547 C 18.015 17.443047 18.784297 16.555098 18.960938 15.474609 C 18.986172 15.320254 19 15.16125 19 15 C 19 14.795 18.977891 14.594531 18.9375 14.400391 C 18.897109 14.20625 18.838281 14.018906 18.761719 13.839844 C 18.685156 13.660781 18.590937 13.489844 18.482422 13.330078 C 18.373906 13.170312 18.251484 13.021016 18.115234 12.884766 C 17.978984 12.748516 17.829687 12.626094 17.669922 12.517578 C 17.510156 12.409063 17.339219 12.314844 17.160156 12.238281 C 16.981094 12.161719 16.79375 12.102891 16.599609 12.0625 C 16.405469 12.022109 16.205 12 16 12 C 15.8575 12 15.723984 11.973047 15.603516 11.923828 C 15.483047 11.874609 15.376484 11.802266 15.287109 11.712891 C 15.197734 11.623516 15.125391 11.516953 15.076172 11.396484 C 15.026953 11.276016 15 11.1425 15 11 C 15 10.8575 15.026953 10.723984 15.076172 10.603516 C 15.125391 10.483047 15.197734 10.376484 15.287109 10.287109 C 15.376484 10.197734 15.483047 10.125391 15.603516 10.076172 C 15.723984 10.026953 15.8575 10 16 10 C 16.57 10 17 10.43 17 11 L 19 11 C 19 10.83875 18.986172 10.679746 18.960938 10.525391 C 18.935703 10.371035 18.9 10.221719 18.851562 10.076172 C 18.560938 9.2028906 17.87 8.5044531 17 8.1894531 L 17 7 L 15 7 z M 2 21 L 2 29 L 4 29 L 4 23 L 9.3808594 23 C 8.5298594 22.435 7.7610781 21.758 7.0800781 21 L 2 21 z M 24.919922 21 C 24.238922 21.758 23.470141 22.435 22.619141 23 L 28 23 L 28 29 L 30 29 L 30 21 L 24.919922 21 z M 6 25 L 6 27 L 26 27 L 26 25 L 6 25 z"/></svg>Make money</a>
+                    </li>
+                    <li aria-haspopup="true"><a href="#" class="sub-icon"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 28 28"><path d="M 13.5 4 C 11.027344 4 9 6.027344 9 8.5 C 9 9.300781 9.226563 10.042969 9.59375 10.6875 C 7.792969 11.742188 6.382813 13.238281 5.625 15 L 5.5 15 C 5.214844 15 5 14.785156 5 14.5 C 5 14.324219 5.089844 14.183594 5.21875 14.09375 L 4.0625 12.46875 C 3.417969 12.921875 3 13.660156 3 14.5 C 3 15.730469 3.917969 16.738281 5.09375 16.9375 C 5.042969 17.289063 5 17.636719 5 18 C 5 20.492188 6.324219 22.652344 8.25 24.25 C 8.007813 25.25 8.128906 26.316406 8.90625 27.09375 C 10.089844 28.277344 12.035156 28.277344 13.21875 27.09375 L 13.59375 26.71875 C 14.375 26.863281 15.160156 27 16 27 C 16.839844 27 17.625 26.863281 18.40625 26.71875 L 18.78125 27.09375 C 19.964844 28.277344 21.910156 28.277344 23.09375 27.09375 C 23.855469 26.332031 23.96875 25.296875 23.75 24.3125 C 24.566406 23.644531 25.246094 22.871094 25.78125 22 L 28 22 L 28 14 L 25.71875 14 C 25.359375 13.417969 24.929688 12.867188 24.4375 12.375 L 25 9.28125 L 25 8 L 24 8 C 24 8 21.597656 8.039063 19.5625 9.5625 C 19.03125 9.410156 18.496094 9.285156 17.9375 9.1875 C 17.976563 8.964844 18 8.734375 18 8.5 C 18 6.027344 15.972656 4 13.5 4 Z M 13.5 6 C 14.890625 6 16 7.109375 16 8.5 C 16 8.671875 15.96875 8.835938 15.9375 9 C 14.324219 9.007813 12.800781 9.320313 11.40625 9.84375 C 11.148438 9.453125 11 8.996094 11 8.5 C 11 7.109375 12.109375 6 13.5 6 Z M 22.75 10.1875 C 22.765625 10.183594 22.765625 10.191406 22.78125 10.1875 L 22.40625 12.46875 L 22.3125 13 L 22.75 13.375 C 23.449219 13.992188 23.992188 14.683594 24.375 15.4375 L 24.65625 16 L 26 16 L 26 20 L 24.65625 20 L 24.375 20.5625 C 23.886719 21.527344 23.117188 22.375 22.125 23.09375 L 21.40625 23.625 L 21.84375 24.4375 C 22.082031 24.839844 22.039063 25.335938 21.6875 25.6875 C 21.269531 26.105469 20.636719 26.105469 20.21875 25.6875 L 19.5 24.96875 L 19.09375 24.59375 L 18.5625 24.71875 C 17.75 24.90625 16.886719 25 16 25 C 15.113281 25 14.253906 24.90625 13.4375 24.71875 L 12.90625 24.59375 L 12.5 24.96875 L 11.78125 25.6875 C 11.363281 26.105469 10.730469 26.105469 10.3125 25.6875 C 9.960938 25.335938 9.917969 24.839844 10.15625 24.4375 L 10.59375 23.625 L 9.875 23.09375 C 8.066406 21.78125 7 19.988281 7 18 C 7 14.257813 10.910156 11 16 11 C 17.230469 11 18.402344 11.183594 19.46875 11.53125 L 20 11.71875 L 20.4375 11.34375 C 21.152344 10.707031 22.035156 10.363281 22.75 10.1875 Z M 22 16 C 21.449219 16 21 16.449219 21 17 C 21 17.550781 21.449219 18 22 18 C 22.550781 18 23 17.550781 23 17 C 23 16.449219 22.550781 16 22 16 Z"/></svg>Save money<img src="/vendor/img/coming.svg?v=" class="ml-2" style="max-height:16px; position: absolute; width: 58px; top: 32px; left: 32px"><i class="fe fe-chevron-down horizontal-icon"></i></a>
+                        <ul class="sub-menu">
+                            <li aria-haspopup="true"><a href="#" class="slide-item">Online Cashback</a></li>
+                            <li aria-haspopup="true"><a href="#" class="slide-item">Earn points offline</a></li>
+                        </ul>
+                    </li>
+
+					<li aria-haspopup="true"><a href="/dashboard/team-member" class="sub-icon"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 30 30"><path d="M 11.5 6 C 9.578125 6 8 7.578125 8 9.5 C 8 11.421875 9.578125 13 11.5 13 C 13.421875 13 15 11.421875 15 9.5 C 15 7.578125 13.421875 6 11.5 6 Z M 20.5 6 C 18.578125 6 17 7.578125 17 9.5 C 17 11.421875 18.578125 13 20.5 13 C 22.421875 13 24 11.421875 24 9.5 C 24 7.578125 22.421875 6 20.5 6 Z M 11.5 8 C 12.339844 8 13 8.660156 13 9.5 C 13 10.339844 12.339844 11 11.5 11 C 10.660156 11 10 10.339844 10 9.5 C 10 8.660156 10.660156 8 11.5 8 Z M 20.5 8 C 21.339844 8 22 8.660156 22 9.5 C 22 10.339844 21.339844 11 20.5 11 C 19.660156 11 19 10.339844 19 9.5 C 19 8.660156 19.660156 8 20.5 8 Z M 7 12 C 4.800781 12 3 13.800781 3 16 C 3 17.113281 3.476563 18.117188 4.21875 18.84375 C 2.886719 19.746094 2 21.28125 2 23 L 4 23 C 4 21.332031 5.332031 20 7 20 C 8.667969 20 10 21.332031 10 23 L 12 23 C 12 21.28125 11.113281 19.746094 9.78125 18.84375 C 10.523438 18.117188 11 17.113281 11 16 C 11 13.800781 9.199219 12 7 12 Z M 12 23 C 11.375 23.835938 11 24.886719 11 26 L 13 26 C 13 24.332031 14.332031 23 16 23 C 17.667969 23 19 24.332031 19 26 L 21 26 C 21 24.886719 20.625 23.835938 20 23 C 19.660156 22.546875 19.25 22.160156 18.78125 21.84375 C 19.523438 21.117188 20 20.113281 20 19 C 20 16.800781 18.199219 15 16 15 C 13.800781 15 12 16.800781 12 19 C 12 20.113281 12.476563 21.117188 13.21875 21.84375 C 12.75 22.160156 12.339844 22.546875 12 23 Z M 20 23 L 22 23 C 22 21.332031 23.332031 20 25 20 C 26.667969 20 28 21.332031 28 23 L 30 23 C 30 21.28125 29.113281 19.746094 27.78125 18.84375 C 28.523438 18.117188 29 17.113281 29 16 C 29 13.800781 27.199219 12 25 12 C 22.800781 12 21 13.800781 21 16 C 21 17.113281 21.476563 18.117188 22.21875 18.84375 C 20.886719 19.746094 20 21.28125 20 23 Z M 7 14 C 8.117188 14 9 14.882813 9 16 C 9 17.117188 8.117188 18 7 18 C 5.882813 18 5 17.117188 5 16 C 5 14.882813 5.882813 14 7 14 Z M 25 14 C 26.117188 14 27 14.882813 27 16 C 27 17.117188 26.117188 18 25 18 C 23.882813 18 23 17.117188 23 16 C 23 14.882813 23.882813 14 25 14 Z M 16 17 C 17.117188 17 18 17.882813 18 19 C 18 20.117188 17.117188 21 16 21 C 14.882813 21 14 20.117188 14 19 C 14 17.882813 14.882813 17 16 17 Z"/></svg></svg>Team Member</a>
+					</li>
+					<li aria-haspopup="true"><a href="#" class="sub-icon"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 30 30"><path d="M 21 4 L 21 28 L 29 28 L 29 4 Z M 23 6 L 27 6 L 27 26 L 23 26 Z M 3 10 L 3 28 L 11 28 L 11 10 Z M 5 12 L 9 12 L 9 26 L 5 26 Z M 12 16 L 12 28 L 20 28 L 20 16 Z M 14 18 L 18 18 L 18 26 L 14 26 Z"/></svg>Statistics<i class="fe fe-chevron-down horizontal-icon"></i></a>
+						<ul class="sub-menu">
+							<li aria-haspopup="true"><a href="/dashboard/personal-income" class="slide-item">Personal income</a></li>
+							<li aria-haspopup="true"><a href="/dashboard/group-income" class="slide-item">Group income</a></li>
+						</ul>
+					</li>
+					<li aria-haspopup="true"><a href="/dashboard/wallet" class="sub-icon"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 30 30"><path d="M 22.96875 4 C 22.816406 4.003906 22.65625 4.023438 22.5 4.0625 L 6.25 8.34375 C 4.9375 8.6875 4 9.890625 4 11.25 L 4 25 C 4 26.644531 5.355469 28 7 28 L 25 28 C 26.644531 28 28 26.644531 28 25 L 28 12 C 28 10.355469 26.644531 9 25 9 L 11.625 9 L 23 6 L 23 8 L 25 8 L 25 6 C 25 4.875 24.042969 3.984375 22.96875 4 Z M 7 11 L 25 11 C 25.566406 11 26 11.433594 26 12 L 26 25 C 26 25.566406 25.566406 26 25 26 L 7 26 C 6.433594 26 6 25.566406 6 25 L 6 12 C 6 11.433594 6.433594 11 7 11 Z M 22.5 17 C 21.671875 17 21 17.671875 21 18.5 C 21 19.328125 21.671875 20 22.5 20 C 23.328125 20 24 19.328125 24 18.5 C 24 17.671875 23.328125 17 22.5 17 Z"/></svg>Balance</a>
+					</li>
+					<li aria-haspopup="true"><a href="https://advertiser.olacity.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 32 32"><path d="M 2 7 L 2 25 L 30 25 L 30 7 L 2 7 z M 4 9 L 28 9 L 28 23 L 4 23 L 4 9 z M 11.71875 11 L 11.5 11.6875 L 9.03125 19.40625 L 9 19.5625 L 9 21 L 11 21 L 11 20 L 14 20 L 14 21 L 16 21 L 16 19.5625 L 15.96875 19.40625 L 13.5 11.6875 L 13.28125 11 L 11.71875 11 z M 21 11 L 21 15 L 19.5 15 C 18.133 15 17 16.133 17 17.5 L 17 18.5 C 17 19.867 18.133 21 19.5 21 L 23 21 L 23 11 L 21 11 z M 12.5 15.15625 L 13.40625 18 L 11.59375 18 L 12.5 15.15625 z M 19.5 17 L 21 17 L 21 19 L 19.5 19 C 19.215 19 19 18.785 19 18.5 L 19 17.5 C 19 17.215 19.215 17 19.5 17 z"/></svg>Advertiser</a>
+					</li>
+					<li aria-haspopup="true"><a href="/dashboard/faq" class="sub-icon"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 30 30"><path d="M 16 4 C 9.382813 4 4 9.382813 4 16 C 4 22.617188 9.382813 28 16 28 C 22.617188 28 28 22.617188 28 16 C 28 9.382813 22.617188 4 16 4 Z M 16 6 C 21.535156 6 26 10.464844 26 16 C 26 21.535156 21.535156 26 16 26 C 10.464844 26 6 21.535156 6 16 C 6 10.464844 10.464844 6 16 6 Z M 16 10 C 13.800781 10 12 11.800781 12 14 L 14 14 C 14 12.882813 14.882813 12 16 12 C 17.117188 12 18 12.882813 18 14 C 18 14.765625 17.507813 15.445313 16.78125 15.6875 L 16.375 15.8125 C 15.558594 16.082031 15 16.863281 15 17.71875 L 15 19 L 17 19 L 17 17.71875 L 17.40625 17.59375 C 18.945313 17.082031 20 15.621094 20 14 C 20 11.800781 18.199219 10 16 10 Z M 15 20 L 15 22 L 17 22 L 17 20 Z"/></svg>FAQ</a>
+
+					<li aria-haspopup="true"><a href="#" class="sub-icon"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 30 30"><path d="M 13.1875 3 L 13.03125 3.8125 L 12.4375 6.78125 C 11.484375 7.15625 10.625 7.683594 9.84375 8.3125 L 6.9375 7.3125 L 6.15625 7.0625 L 5.75 7.78125 L 3.75 11.21875 L 3.34375 11.9375 L 3.9375 12.46875 L 6.1875 14.4375 C 6.105469 14.949219 6 15.460938 6 16 C 6 16.539063 6.105469 17.050781 6.1875 17.5625 L 3.9375 19.53125 L 3.34375 20.0625 L 3.75 20.78125 L 5.75 24.21875 L 6.15625 24.9375 L 6.9375 24.6875 L 9.84375 23.6875 C 10.625 24.316406 11.484375 24.84375 12.4375 25.21875 L 13.03125 28.1875 L 13.1875 29 L 18.8125 29 L 18.96875 28.1875 L 19.5625 25.21875 C 20.515625 24.84375 21.375 24.316406 22.15625 23.6875 L 25.0625 24.6875 L 25.84375 24.9375 L 26.25 24.21875 L 28.25 20.78125 L 28.65625 20.0625 L 28.0625 19.53125 L 25.8125 17.5625 C 25.894531 17.050781 26 16.539063 26 16 C 26 15.460938 25.894531 14.949219 25.8125 14.4375 L 28.0625 12.46875 L 28.65625 11.9375 L 28.25 11.21875 L 26.25 7.78125 L 25.84375 7.0625 L 25.0625 7.3125 L 22.15625 8.3125 C 21.375 7.683594 20.515625 7.15625 19.5625 6.78125 L 18.96875 3.8125 L 18.8125 3 Z M 14.8125 5 L 17.1875 5 L 17.6875 7.59375 L 17.8125 8.1875 L 18.375 8.375 C 19.511719 8.730469 20.542969 9.332031 21.40625 10.125 L 21.84375 10.53125 L 22.40625 10.34375 L 24.9375 9.46875 L 26.125 11.5 L 24.125 13.28125 L 23.65625 13.65625 L 23.8125 14.25 C 23.941406 14.820313 24 15.402344 24 16 C 24 16.597656 23.941406 17.179688 23.8125 17.75 L 23.6875 18.34375 L 24.125 18.71875 L 26.125 20.5 L 24.9375 22.53125 L 22.40625 21.65625 L 21.84375 21.46875 L 21.40625 21.875 C 20.542969 22.667969 19.511719 23.269531 18.375 23.625 L 17.8125 23.8125 L 17.6875 24.40625 L 17.1875 27 L 14.8125 27 L 14.3125 24.40625 L 14.1875 23.8125 L 13.625 23.625 C 12.488281 23.269531 11.457031 22.667969 10.59375 21.875 L 10.15625 21.46875 L 9.59375 21.65625 L 7.0625 22.53125 L 5.875 20.5 L 7.875 18.71875 L 8.34375 18.34375 L 8.1875 17.75 C 8.058594 17.179688 8 16.597656 8 16 C 8 15.402344 8.058594 14.820313 8.1875 14.25 L 8.34375 13.65625 L 7.875 13.28125 L 5.875 11.5 L 7.0625 9.46875 L 9.59375 10.34375 L 10.15625 10.53125 L 10.59375 10.125 C 11.457031 9.332031 12.488281 8.730469 13.625 8.375 L 14.1875 8.1875 L 14.3125 7.59375 Z M 16 11 C 13.25 11 11 13.25 11 16 C 11 18.75 13.25 21 16 21 C 18.75 21 21 18.75 21 16 C 21 13.25 18.75 11 16 11 Z M 16 13 C 17.667969 13 19 14.332031 19 16 C 19 17.667969 17.667969 19 16 19 C 14.332031 19 13 17.667969 13 16 C 13 14.332031 14.332031 13 16 13 Z"/></svg>My Account<i class="fe fe-chevron-down horizontal-icon"></i></a>
+						<ul class="sub-menu">
+							<li aria-haspopup="true"><a href="/dashboard/profile" class="slide-item">Profile</a></li>
+							<li aria-haspopup="true"><a href="/dashboard/2FA" class="slide-item">Two-Factor Authentication</a></li>
+							<li aria-haspopup="true"><a href="/dashboard/kyc" class="slide-item">
+							KYC Verification
+							<li aria-haspopup="true"><a href="/dashboard/register-vndc" class="slide-item">Register VNDC</a></li>
+							<li aria-haspopup="true"><a href="/logout" class="slide-item">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<!--Nav-->
+		</div>
+	</div>
+</div>
+			<!--Horizontal-main -->
+
+			<!-- main-content opened -->
+			<div class="main-content horizontal-content">
+																        <!-- container opened -->
+        <div class="container short_link">
+
+            <!-- breadcrumb -->
+            <div class="breadcrumb-header justify-content-between">
+                <div class="my-auto">
+                    <div class="d-flex"><h4 class="content-title mb-0 my-auto">DASHBOARD</h4><span
+                            class="text-muted mt-1 tx-13 ml-2 mb-0">/ View ad</span>
+                    </div>
+                </div>
+            </div>
+            <!-- breadcrumb -->
+            <div class="app-content-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                                                    <div class="panel panel-default">
+                                <p>Click &quot;View&quot; to start viewing advertisements. To be rewarded, please do not turn off the ads website until the timer stops. Counting time depends on different advertisements.</p>
+
+                                <div class="view-ads row">
+                                    <div class="content-click col-md-12">
+                                        <div class="description">
+                                            <div class="image-view" style="float:left;">
+                                                <img src="https://olalive-storage.s3.ap-southeast-1.amazonaws.com/assets/view_ads/402b9b34ffdff5d21235dccb1c98d2bd_1600742010.jpg" alt="" style="width: 300px">
+                                            </div>
+                                            <div class="sub-description" style="margin-left: 20px; float: left;">
+                                                <p style="font-size: 1.4rem !important">VIETTRAVEL - NHÀ TỔ CHỨC DU LỊCH CHUYÊN NGHIỆP</p>
+                                                <p>Category:
+                                                    <span class="target yellow">Non-Target</span>
+                                                </p>
+                                                <p>Được thành lập vào năm 1995, Viettravel hiện đang là một trong những đơn vị lữ hành lớn nhất tại Việt Nam. Hiện công ty đã có chi nhánh tại khắp các tỉnh thành cả nước và một số quốc gia trên thê giới như Mỹ, Thái Lan, Singapore, Pháp, Úc và Campuchia. <br />
+Viettravel là đơn vị đầu tiên liên kết được các đối tác du lịch tại nhiều quốc gia. Công ty mang đến cho khách hàng các tour du lịch uy tín trong nước và Quốc tế. Với sự trợ giúp của Viettravel, khách hàng luôn có thể khám phá vẻ đẹp văn hóa Việt Nam từ các thành phố lớn như Hà Nội, Hồ Chí Minh, Đà Nẵng đến các tỉnh thành nhỏ như Gia Lai, Cần Thơ, Kiên Giang. Khi đăng ký tour khách hàng được cung cấp đầy đủ thông tin về lịch trình, giá tour, thông tin về hướng dẫn viên, lịch trình tour, bảo hiểm du lịch,… Công ty luôn cố gắng đem lại đa dạng các tour du lịch phù hợp với nhu cầu tham quan và tài chính của mỗi người. Đội ngũ nhân viên của Viettravel được đào tạo bài bản, nắm chắc được các kiến thức du lịch, giúp khách hàng có thể trải nghiệm chuyến đi vui vẻ và an toàn. Với mục tiêu giúp tất cả mọi người đều có thể trải nghiệm văn hóa ở nhiều vùng miền khác nhau, Viettravel luôn có những chương trình khuyến mãi đem “tour giá rẻ mà chất lượng” đến khách hàng toàn quốc.</p>
+                                            </div>
+                                            <div class="timer-view" style="clear: both">
+                                                <p>Price: <b>48 ₫</b></p>
+                                                <p>View duration: <b>45 Seconds</b></p>
+                                                <a href="javascript:void(0)" id="skip_ads">Skip</a>
+                                            </div>
+                                        </div>
+                                        <div class="loading">
+                                            <div class="lds-spinner" >
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                            <span id="tmr" style="display: block; color: orangered; font-size: 16px"></span>
+                                        </div>
+                                        <div class="button" style="height: 150px; position:relative !important;">
+                                            <a id="MCgmTRkUDvRsWPi" class="btn btn btn-sm">Open</a>
+                                        </div>
+                                        <div>
+                                            <p style="margin-bottom: 2px">Note <span style="color: red">*</span></p>
+                                            <p style="margin-bottom: 2px">
+                                                <span class="target yellow">Non-Target</span>
+                                                Any member can view the advertisement
+                                            </p>
+                                            <p>
+                                                <span class="target green">Target</span>
+                                                Only for selected members according to the advertiser&#039;s target audience
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+			</div>
+			<!-- Container closed -->
+
+			<!-- Sidebar-right-->
+			
+			<!--/Sidebar-right-->
+
+			<!-- Message Modal -->
+			
+
+			<!--Video Modal -->
+			<!-- modal -->
+
+			<!-- Audio Modal -->
+			<!-- modal -->
+
+			<!-- Footer opened -->
+			<div class="main-footer ht-40">
+	<div class="container-fluid pd-t-0-f ht-100p">
+                    <span>Copyright © 2020 All Rights Reserved <a href="#">Ola City</a></span>
+                <div class="footer-lang">
+            <div id="p-lang-locale" class="hidden"> en </div>
+<div id="google_translate_element"></div>
+<select class="form-control lang-select no-border" aria-label="Language Translate Widget">
+    <option value="" selected>Choose language</option>
+                                            <option class="notranslate" value="en" data-href="https://olacity.com/dashboard/lang/change?lang_code=en">English</option>
+                                            <option class="notranslate" value="vi" data-href="https://olacity.com/dashboard/lang/change?lang_code=vi">Vietnamese</option>
+                                            <option class="notranslate" value="af">Afrikaans</option>
+                                            <option class="notranslate" value="sq">Albanian</option>
+                                            <option class="notranslate" value="am">Amharic</option>
+                                            <option class="notranslate" value="ar">Arabic</option>
+                                            <option class="notranslate" value="hy">Armenian</option>
+                                            <option class="notranslate" value="az">Azerbaijani</option>
+                                            <option class="notranslate" value="eu">Basque</option>
+                                            <option class="notranslate" value="be">Belarusian</option>
+                                            <option class="notranslate" value="bn">Bengali</option>
+                                            <option class="notranslate" value="bs">Bosnian</option>
+                                            <option class="notranslate" value="bg">Bulgarian</option>
+                                            <option class="notranslate" value="ca">Catalan</option>
+                                            <option class="notranslate" value="ceb">Cebuano</option>
+                                            <option class="notranslate" value="ny">Chichewa</option>
+                                            <option class="notranslate" value="zh-CN">Chinese (Simplified)</option>
+                                            <option class="notranslate" value="zh-TW">Chinese (Traditional)</option>
+                                            <option class="notranslate" value="co">Corsican</option>
+                                            <option class="notranslate" value="hr">Croatian</option>
+                                            <option class="notranslate" value="cs">Czech</option>
+                                            <option class="notranslate" value="da">Danish</option>
+                                            <option class="notranslate" value="nl">Dutch</option>
+                                            <option class="notranslate" value="eo">Esperanto</option>
+                                            <option class="notranslate" value="et">Estonian</option>
+                                            <option class="notranslate" value="tl">Filipino</option>
+                                            <option class="notranslate" value="fi">Finnish</option>
+                                            <option class="notranslate" value="fr">French</option>
+                                            <option class="notranslate" value="fy">Frisian</option>
+                                            <option class="notranslate" value="gl">Galician</option>
+                                            <option class="notranslate" value="ka">Georgian</option>
+                                            <option class="notranslate" value="de">German</option>
+                                            <option class="notranslate" value="el">Greek</option>
+                                            <option class="notranslate" value="gu">Gujarati</option>
+                                            <option class="notranslate" value="ht">Haitian Creole</option>
+                                            <option class="notranslate" value="ha">Hausa</option>
+                                            <option class="notranslate" value="haw">Hawaiian</option>
+                                            <option class="notranslate" value="iw">Hebrew</option>
+                                            <option class="notranslate" value="hi">Hindi</option>
+                                            <option class="notranslate" value="hmn">Hmong</option>
+                                            <option class="notranslate" value="hu">Hungarian</option>
+                                            <option class="notranslate" value="is">Icelandic</option>
+                                            <option class="notranslate" value="ig">Igbo</option>
+                                            <option class="notranslate" value="id">Indonesian</option>
+                                            <option class="notranslate" value="ga">Irish</option>
+                                            <option class="notranslate" value="it">Italian</option>
+                                            <option class="notranslate" value="ja">Japanese</option>
+                                            <option class="notranslate" value="jw">Javanese</option>
+                                            <option class="notranslate" value="kn">Kannada</option>
+                                            <option class="notranslate" value="kk">Kazakh</option>
+                                            <option class="notranslate" value="km">Khmer</option>
+                                            <option class="notranslate" value="rw">Kinyarwanda</option>
+                                            <option class="notranslate" value="ko">Korean</option>
+                                            <option class="notranslate" value="ku">Kurdish (Kurmanji)</option>
+                                            <option class="notranslate" value="ky">Kyrgyz</option>
+                                            <option class="notranslate" value="lo">Lao</option>
+                                            <option class="notranslate" value="la">Latin</option>
+                                            <option class="notranslate" value="lv">Latvian</option>
+                                            <option class="notranslate" value="lt">Lithuanian</option>
+                                            <option class="notranslate" value="lb">Luxembourgish</option>
+                                            <option class="notranslate" value="mk">Macedonian</option>
+                                            <option class="notranslate" value="mg">Malagasy</option>
+                                            <option class="notranslate" value="ms">Malay</option>
+                                            <option class="notranslate" value="ml">Malayalam</option>
+                                            <option class="notranslate" value="mt">Maltese</option>
+                                            <option class="notranslate" value="mi">Maori</option>
+                                            <option class="notranslate" value="mr">Marathi</option>
+                                            <option class="notranslate" value="mn">Mongolian</option>
+                                            <option class="notranslate" value="my">Myanmar (Burmese)</option>
+                                            <option class="notranslate" value="ne">Nepali</option>
+                                            <option class="notranslate" value="no">Norwegian</option>
+                                            <option class="notranslate" value="or">Odia (Oriya)</option>
+                                            <option class="notranslate" value="ps">Pashto</option>
+                                            <option class="notranslate" value="fa">Persian</option>
+                                            <option class="notranslate" value="pl">Polish</option>
+                                            <option class="notranslate" value="pt">Portuguese</option>
+                                            <option class="notranslate" value="pa">Punjabi</option>
+                                            <option class="notranslate" value="ro">Romanian</option>
+                                            <option class="notranslate" value="ru">Russian</option>
+                                            <option class="notranslate" value="sm">Samoan</option>
+                                            <option class="notranslate" value="gd">Scots Gaelic</option>
+                                            <option class="notranslate" value="sr">Serbian</option>
+                                            <option class="notranslate" value="st">Sesotho</option>
+                                            <option class="notranslate" value="sn">Shona</option>
+                                            <option class="notranslate" value="sd">Sindhi</option>
+                                            <option class="notranslate" value="si">Sinhala</option>
+                                            <option class="notranslate" value="sk">Slovak</option>
+                                            <option class="notranslate" value="sl">Slovenian</option>
+                                            <option class="notranslate" value="so">Somali</option>
+                                            <option class="notranslate" value="es">Spanish</option>
+                                            <option class="notranslate" value="su">Sundanese</option>
+                                            <option class="notranslate" value="sw">Swahili</option>
+                                            <option class="notranslate" value="sv">Swedish</option>
+                                            <option class="notranslate" value="tg">Tajik</option>
+                                            <option class="notranslate" value="ta">Tamil</option>
+                                            <option class="notranslate" value="tt">Tatar</option>
+                                            <option class="notranslate" value="te">Telugu</option>
+                                            <option class="notranslate" value="th">Thailand</option>
+                                            <option class="notranslate" value="tr">Turkish</option>
+                                            <option class="notranslate" value="tk">Turkmen</option>
+                                            <option class="notranslate" value="uk">Ukrainian</option>
+                                            <option class="notranslate" value="ur">Urdu</option>
+                                            <option class="notranslate" value="ug">Uyghur</option>
+                                            <option class="notranslate" value="uz">Uzbek</option>
+                                            <option class="notranslate" value="cy">Welsh</option>
+                                            <option class="notranslate" value="xh">Xhosa</option>
+                                            <option class="notranslate" value="yi">Yiddish</option>
+                                            <option class="notranslate" value="yo">Yoruba</option>
+                                            <option class="notranslate" value="zu">Zulu</option>
+                        </select>
+        </div>
+    </div>
+</div>
+
+
+			<!-- Footer closed -->
+
+		</div>
+		<!-- End Page -->
+
+		<!-- Back-to-top -->
+		<a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
+
+        <a href="https://t.me/olacityvietnam" target="_blank" class="hover-fade-out" id="twitterIcon">
+        </a>
+
+        <a href="https://www.facebook.com/groups/olacityvietnam" target="_blank" class="hover-fade-out" id="facebookIcon">
+        </a>
+		<!-- JQuery min js -->
+		<script src="/vendor/plugins/jquery/jquery.min.js"></script>
+
+		<!-- Bootstrap Bundle js -->
+		<script src="/vendor/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Ionicons js -->
+		<script src="/vendor/plugins/ionicons/ionicons.js"></script>
+
+		<!-- Moment js -->
+		<script src="/vendor/plugins/moment/moment.js"></script>
+
+		<!--Internal Sparkline js -->
+		<script src="/vendor/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+		<!-- Moment js -->
+		<script src="/vendor/plugins/raphael/raphael.min.js"></script>
+
+		<!-- Internal Piety js -->
+		<script src="/vendor/plugins/peity/jquery.peity.min.js"></script>
+
+		<!--Internal  Flot js-->
+		<script src="/vendor/plugins/jquery.flot/jquery.flot.js"></script>
+		<script src="/vendor/plugins/jquery.flot/jquery.flot.pie.js"></script>
+		<script src="/vendor/plugins/jquery.flot/jquery.flot.resize.js"></script>
+		<script src="/vendor/plugins/jquery.flot/jquery.flot.categories.js"></script>
+		<script src="/vendor/js/dashboard.sampledata.js"></script>
+		<script src="/vendor/js/chart.flot.sampledata.js"></script>
+
+		<!-- Sticky js -->
+		<script src="/vendor/js/sticky.js"></script>
+
+		<!-- Rating js-->
+		<script src="/vendor/plugins/rating/jquery.rating-stars.js"></script>
+		<script src="/vendor/plugins/rating/jquery.barrating.js"></script>
+
+		<!-- P-scroll js -->
+		
+		
+
+		<!-- Horizontalmenu js-->
+		
+
+		<!-- Eva-icons js -->
+		<script src="/vendor/js/eva-icons.min.js"></script>
+
+
+
+		<!-- Horizontalmenu js-->
+		<script src="/vendor/plugins/horizontal-menu/horizontal-menu-2/horizontal-menu.js"></script>
+
+		<!-- Internal Map -->
+		<script src="/vendor/plugins/jqvmap/jquery.vmap.min.js"></script>
+		<script src="/vendor/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+
+		<!-- Internal Chart js -->
+		<script src="/vendor/plugins/chart.js/Chart.bundle.min.js"></script>
+
+		<!--Internal  index js -->
+		<script src="/vendor/js/index.js"></script>
+		<script src="/vendor/js/jquery.vmap.sampledata.js"></script>
+
+		<!-- custom js -->
+		<script src="/vendor/js/custom.js"></script>
+		<script src="/vendor/js/jquery.vmap.sampledata.js"></script>
+
+		
+		<script src="/vendor/plugins/notify/js/notifIt.js"></script>
+		<script src="/vendor/plugins/notify/js/notifit-custom.js"></script>
+        <script type="text/javascript" src="/vendor/plugins/slick-master/slick/slick.min.js"></script>
+		<script type="text/javascript">
+			function copyToClipboard(element) {
+				var $temp = $("<input>");
+				$("body").append($temp);
+				$temp.val($(element).html()).select();
+				document.execCommand("copy");
+				$temp.remove();
+				notif({
+					msg: "Copied <b>successfully</b>!",
+					type: "success"
+				});
+			}
+		</script>
+		    <script src="/vendor/plugins/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="/vendor/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+    <script src="/vendor/plugins/datatable/js/dataTables.responsive.min.js"></script>
+    <script src="/vendor/plugins/datatable/js/responsive.dataTables.min.js"></script>
+    <script src="/vendor/plugins/datatable/js/jquery.dataTables.js"></script>
+    <script src="/vendor/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+    <script src="/vendor/plugins/datatable/js/dataTables.buttons.min.js"></script>
+    <script src="/vendor/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+    <script src="/vendor/plugins/datatable/js/jszip.min.js"></script>
+    <script src="/vendor/plugins/datatable/js/pdfmake.min.js"></script>
+    <script src="/vendor/plugins/datatable/js/vfs_fonts.js"></script>
+    <script src="/vendor/plugins/datatable/js/buttons.html5.min.js"></script>
+    <script src="/vendor/plugins/datatable/js/buttons.print.min.js"></script>
+    <script src="/vendor/plugins/datatable/js/buttons.colVis.min.js"></script>
+    <script src="/vendor/plugins/datatable/js/dataTables.responsive.min.js"></script>
+    <script src="/vendor/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+    <script src="/vendor/js/table-data.js"></script>
+    <script>
+        $(document).ready(function () {
+            /*if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                $('#statistic').dataTable({
+                    searching:false,
+                    serverSide:false,
+                    sort: false,
+                    paging: false,
+                    ordering: false,
+                    info: false,
+                    sScrollY: 250,
+                    scrollX: true,
+                    fixedColumns: true
+                });
+            }
+            else {
+                $('#statistic').dataTable({
+                    searching:false,
+                    serverSide:false,
+                    sort: false,
+                    paging: false,
+                    ordering: false,
+                    info: false,
+                    //sScrollY: 450,
+                    fixedColumns: true
+                });
+            }*/
+
+            let counter = 45;
+            let interval;
+            let string_rand = 'MCgmTRkUDvRsWPi';
+            let window_tab;
+            let tmr = document.getElementById('tmr');
+            let url = 'https://stvkr.com/click-AQTK4K3B-NLJQCM48?bt=25&amp;tl=1';
+
+            document.getElementById('MCgmTRkUDvRsWPi').onclick = function () {
+                window_tab = window.open(url);
+                if(typeof window_tab == 'undefined' || window_tab == null) {
+                    alert('ads/ads.Error! Looks like windows doesn&#039;t open at your device. Please reload this page.');
+                    return;
+                }
+                else if (window_tab.closed === false) {
+                    $('.loading').fadeIn();
+                    $('.button').remove();
+                    tmr.innerHTML = sec_left(counter);
+                    interval = setInterval(function () {
+                        if (window_tab.closed === true) {
+                            tmr.innerHTML = 'You have closed the tab!';
+                            $('.lds-spinner').remove();
+                            document.title = 'You have closed the tab!';
+                            clearInterval(interval);
+                        }
+                        else if (counter > 0) {
+                            counter--;
+                            document.title = sec_left(counter) + ' | DO NOT CLOSE TAB!';
+                            tmr.innerHTML = sec_left(counter);
+                        }
+                        // Display 'counter' wherever you want to display it.
+                        else if (counter === 0) {
+                            clearInterval(interval);
+                            $.ajax({
+                                'url': 'https://olacity.com/surfAds/back_money',
+                                headers: {
+                                    'X-CSRF-TOKEN': 'UzyISGo3EA3IC7S5mO612UEjbu8XDhA2Y7Gsu0uT'
+                                },
+                                data: {
+                                    "surf_ads_id": "eyJpdiI6Ikd3VFZQZFh2bnp5MEhaOVRkcHdPT3c9PSIsInZhbHVlIjoiVW1USjFcL0FrU0ZraWFuR0QzWWVFcWlEKzByUEgrYk5HVW5WOTF1Tk1rSXc9IiwibWFjIjoiMzNjYjI5MDMzODgzNmMyNmYwNjFlODQ5ZWM4MWFkNzY5ZTIxMzZmNzRjN2M3NzJlMDZkYzgyOThmMTIwOTliOCJ9",
+                                },
+                                'type': 'POST',
+                                'success': function (response) {
+                                    clearInterval(counter);
+                                    if (response.status === 400 || response.status === 403 ) {
+                                        notif({
+                                            msg: response.msg,
+                                            type: "error",
+                                            timeout: 5000
+                                        });
+
+                                        setTimeout(function () {
+                                            window.location.reload();
+                                        }, 5000);
+                                    }
+                                    else if (response.status === 201){
+                                        notif({
+                                            msg: response.msg,
+                                            type: "success"
+                                        });
+                                        setTimeout(function () {
+                                            window.location.reload();
+                                        }, 1700);
+                                    }
+                                    else {
+                                        notif({
+                                            msg: 'Failed to add money, please reload the page',
+                                            type: "error"
+                                        });
+                                        setTimeout(function () {
+                                            window.location.reload();
+                                        }, 5000);
+                                    }
+                                    return true;
+                                },
+                                error: function(xhr, status, error) {
+                                    var err = xhr.responseText;
+                                    notif({
+                                        msg: err,
+                                        type: "error"
+                                    });
+                                    setTimeout(function () {
+                                       window.location.reload();
+                                    }, 5000);
+                                }
+                            });
+                        }
+                    }, 1000);
+                }
+            }
+
+            let aColor = ['#3f51b5', '#673ab7', '#2196f3', '#009688', '#4caf50', '#9c27b0', '#f44336', '#e91e63',
+                '#ff5722', '#607d8b', '#795548', '#616161'
+            ]
+            let div_proceed = $('.button');
+            let proceed = $('#' + string_rand);
+            proceed.css({
+                marginLeft : Math.random() * (div_proceed.width() - proceed.width() - 20),
+                marginTop : Math.random() * (div_proceed.height() - proceed.height()),
+                backgroundColor: aColor[Math.floor(Math.random() * aColor.length)]
+            });
+
+            function declOfNum(n, titles) {
+                return titles[n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2];
+            }
+
+            function sec_left(num) {
+                return 'Còn lại: ' + num;
+            }
+
+            window.onkeydown = function(evt) {
+                if(evt.keyCode === 123 || evt.keyCode === 85 || evt.keyCode === 67 ||
+                    (evt.ctrlKey && evt.shiftKey && evt.keyCode == 73)
+                )
+                    return false;
+            };
+
+            document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+
+            $(document).on('click', '#skip_ads', function () {
+                $.ajax({
+                    method: 'post',
+                    url: 'https://olacity.com/dashboard/view-ads/skip',
+                    headers: {
+                        'X-CSRF-TOKEN': 'UzyISGo3EA3IC7S5mO612UEjbu8XDhA2Y7Gsu0uT'
+                    },
+                    data: {
+                        "surf_ads_id": "226",
+                    },
+                    success:function (response) {
+                        if (response.status === 201) {
+                            window.location.reload();
+                        }
+                    }
+                });
+            });
+        });
+
+        function loadURL (url, success, error) {
+            $.ajax({
+                'url': url,
+                headers: {
+                    'X-CSRF-TOKEN': 'UzyISGo3EA3IC7S5mO612UEjbu8XDhA2Y7Gsu0uT'
+                },
+                'type': 'GET',
+                'success': function (response) {
+                    if(response.status) {
+                        success();
+                    } else {
+                        notif({
+                            msg: response.msg,
+                            type: "error",
+                            timeout: 5000
+                        });
+                        setTimeout(function () {
+                            window.location.reload();
+                        }, 5000);
+                    }
+                },
+                'error': function (response) {
+                    error(response);
+                }
+            });
+        }
+    </script>
+    		<script type="text/javascript" src="/vendor/js/lang.min.js?v=1.0.10"></script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+﻿[
+    {
+        "domain": "olacity.com",
+        "expirationDate": 1700775853.529686,
+        "hostOnly": true,
+        "httpOnly": true,
+        "name": "laravel_session",
+        "path": "/",
+        "sameSite": "unspecified",
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "eyJpdiI6Img3XC9CRTFJaW1UOUthM3MwZlwvV1NGZz09IiwidmFsdWUiOiI4VXJkVE1yNll2bzRnVzJSQkoyQlVZTUJFNHU0UGh6dlFjeEt6K01GRDZ6TVwvZTd1blZFSTE4MExjenBIT09TUCIsIm1hYyI6ImQ5YmZjNjhjNjlkMjA2Yjk3ZjJmMmNmZjk2ZDI1YjFlN2VkOTQ4OGJmMTAwODczNjdhMjA5NWJmMjBmZTQxZTQifQ%3D%3D"
+    }
+]
